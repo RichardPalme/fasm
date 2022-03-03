@@ -1,0 +1,1110 @@
+
+--------------------
+dataset_name = PTC_MR
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 100, t_1 = 100
+num_features = 0
+mean = 0.557941
+stdev = 0.0545039
+
+t_0 = 95, t_1 = 100
+num_features = 1
+mean = 0.557059
+stdev = 0.0558932
+
+t_0 = 90, t_1 = 100
+num_features = 1
+mean = 0.557059
+stdev = 0.0558932
+
+t_0 = 85, t_1 = 100
+num_features = 1
+mean = 0.557059
+stdev = 0.0558932
+
+t_0 = 80, t_1 = 100
+num_features = 1
+mean = 0.557059
+stdev = 0.0558932
+
+t_0 = 75, t_1 = 100
+num_features = 1
+mean = 0.557059
+stdev = 0.0558932
+
+t_0 = 70, t_1 = 100
+num_features = 1
+mean = 0.557059
+stdev = 0.0558932
+
+t_0 = 65, t_1 = 100
+num_features = 2
+mean = 0.548676
+stdev = 0.0479554
+
+t_0 = 60, t_1 = 100
+num_features = 2
+mean = 0.548676
+stdev = 0.0479554
+
+t_0 = 55, t_1 = 100
+num_features = 2
+mean = 0.548676
+stdev = 0.0479554
+
+t_0 = 50, t_1 = 100
+num_features = 3
+mean = 0.550147
+stdev = 0.0503059
+
+t_0 = 45, t_1 = 100
+num_features = 3
+mean = 0.550147
+stdev = 0.0503059
+
+t_0 = 40, t_1 = 100
+num_features = 3
+mean = 0.550147
+stdev = 0.0503059
+
+t_0 = 35, t_1 = 100
+num_features = 3
+mean = 0.550147
+stdev = 0.0503059
+
+t_0 = 30, t_1 = 100
+num_features = 3
+mean = 0.550147
+stdev = 0.0503059
+
+t_0 = 25, t_1 = 100
+num_features = 4
+mean = 0.544706
+stdev = 0.0476942
+
+t_0 = 20, t_1 = 100
+num_features = 4
+mean = 0.544706
+stdev = 0.0476942
+
+t_0 = 15, t_1 = 100
+num_features = 5
+mean = 0.544706
+stdev = 0.0477848
+
+t_0 = 10, t_1 = 100
+num_features = 5
+mean = 0.544706
+stdev = 0.0477848
+
+t_0 = 5, t_1 = 100
+num_features = 6
+mean = 0.536765
+stdev = 0.0499784
+
+t_0 = 0, t_1 = 100
+num_features = 18
+mean = 0.560882
+stdev = 0.0613085
+
+t_0 = 95, t_1 = 95
+num_features = 1
+mean = 0.557059
+stdev = 0.0558932
+
+t_0 = 90, t_1 = 95
+num_features = 2
+mean = 0.553088
+stdev = 0.0546653
+
+t_0 = 85, t_1 = 95
+num_features = 2
+mean = 0.553088
+stdev = 0.0546653
+
+t_0 = 80, t_1 = 95
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 75, t_1 = 95
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 70, t_1 = 95
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 65, t_1 = 95
+num_features = 4
+mean = 0.543529
+stdev = 0.0506839
+
+t_0 = 60, t_1 = 95
+num_features = 5
+mean = 0.546912
+stdev = 0.0544195
+
+t_0 = 55, t_1 = 95
+num_features = 6
+mean = 0.539559
+stdev = 0.04977
+
+t_0 = 50, t_1 = 95
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 45, t_1 = 95
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 40, t_1 = 95
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 35, t_1 = 95
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 30, t_1 = 95
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 25, t_1 = 95
+num_features = 12
+mean = 0.54
+stdev = 0.0527398
+
+t_0 = 20, t_1 = 95
+num_features = 12
+mean = 0.54
+stdev = 0.0527398
+
+t_0 = 15, t_1 = 95
+num_features = 13
+mean = 0.540882
+stdev = 0.0512212
+
+t_0 = 10, t_1 = 95
+num_features = 15
+mean = 0.528382
+stdev = 0.054123
+
+t_0 = 5, t_1 = 95
+num_features = 16
+mean = 0.533235
+stdev = 0.0461596
+
+t_0 = 0, t_1 = 95
+num_features = 41
+mean = 0.560588
+stdev = 0.0652477
+
+t_0 = 90, t_1 = 90
+num_features = 2
+mean = 0.553088
+stdev = 0.0546653
+
+t_0 = 85, t_1 = 90
+num_features = 2
+mean = 0.553088
+stdev = 0.0546653
+
+t_0 = 80, t_1 = 90
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 75, t_1 = 90
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 70, t_1 = 90
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 65, t_1 = 90
+num_features = 4
+mean = 0.543529
+stdev = 0.0506839
+
+t_0 = 60, t_1 = 90
+num_features = 5
+mean = 0.546912
+stdev = 0.0544195
+
+t_0 = 55, t_1 = 90
+num_features = 6
+mean = 0.539559
+stdev = 0.04977
+
+t_0 = 50, t_1 = 90
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 45, t_1 = 90
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 40, t_1 = 90
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 35, t_1 = 90
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 30, t_1 = 90
+num_features = 9
+mean = 0.540735
+stdev = 0.0503815
+
+t_0 = 25, t_1 = 90
+num_features = 14
+mean = 0.556912
+stdev = 0.0574341
+
+t_0 = 20, t_1 = 90
+num_features = 14
+mean = 0.556912
+stdev = 0.0574341
+
+t_0 = 15, t_1 = 90
+num_features = 15
+mean = 0.578971
+stdev = 0.0686516
+
+t_0 = 10, t_1 = 90
+num_features = 17
+mean = 0.577353
+stdev = 0.0530888
+
+t_0 = 5, t_1 = 90
+num_features = 18
+mean = 0.571176
+stdev = 0.0580732
+
+t_0 = 0, t_1 = 90
+num_features = 71
+mean = 0.589853
+stdev = 0.0659603
+
+t_0 = 85, t_1 = 85
+num_features = 2
+mean = 0.553088
+stdev = 0.0546653
+
+t_0 = 80, t_1 = 85
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 75, t_1 = 85
+num_features = 4
+mean = 0.55
+stdev = 0.0545507
+
+t_0 = 70, t_1 = 85
+num_features = 4
+mean = 0.55
+stdev = 0.0545507
+
+t_0 = 65, t_1 = 85
+num_features = 5
+mean = 0.544412
+stdev = 0.0558041
+
+t_0 = 60, t_1 = 85
+num_features = 6
+mean = 0.545147
+stdev = 0.054877
+
+t_0 = 55, t_1 = 85
+num_features = 7
+mean = 0.544118
+stdev = 0.0546299
+
+t_0 = 50, t_1 = 85
+num_features = 11
+mean = 0.552353
+stdev = 0.0619856
+
+t_0 = 45, t_1 = 85
+num_features = 13
+mean = 0.539853
+stdev = 0.0593103
+
+t_0 = 40, t_1 = 85
+num_features = 13
+mean = 0.539853
+stdev = 0.0593103
+
+t_0 = 35, t_1 = 85
+num_features = 14
+mean = 0.537647
+stdev = 0.0556621
+
+t_0 = 30, t_1 = 85
+num_features = 14
+mean = 0.537647
+stdev = 0.0556621
+
+t_0 = 25, t_1 = 85
+num_features = 21
+mean = 0.583971
+stdev = 0.0584656
+
+t_0 = 20, t_1 = 85
+num_features = 22
+mean = 0.573529
+stdev = 0.0572964
+
+t_0 = 15, t_1 = 85
+num_features = 23
+mean = 0.579853
+stdev = 0.0622271
+
+t_0 = 10, t_1 = 85
+num_features = 26
+mean = 0.576029
+stdev = 0.050945
+
+t_0 = 5, t_1 = 85
+num_features = 28
+mean = 0.576324
+stdev = 0.0589225
+
+t_0 = 0, t_1 = 85
+num_features = 85
+mean = 0.584559
+stdev = 0.0590574
+
+t_0 = 80, t_1 = 80
+num_features = 3
+mean = 0.548529
+stdev = 0.0543322
+
+t_0 = 75, t_1 = 80
+num_features = 4
+mean = 0.55
+stdev = 0.0545507
+
+t_0 = 70, t_1 = 80
+num_features = 5
+mean = 0.557941
+stdev = 0.0566824
+
+t_0 = 65, t_1 = 80
+num_features = 6
+mean = 0.553235
+stdev = 0.0615465
+
+t_0 = 60, t_1 = 80
+num_features = 7
+mean = 0.554706
+stdev = 0.0614516
+
+t_0 = 55, t_1 = 80
+num_features = 8
+mean = 0.551912
+stdev = 0.0585455
+
+t_0 = 50, t_1 = 80
+num_features = 12
+mean = 0.555441
+stdev = 0.0511906
+
+t_0 = 45, t_1 = 80
+num_features = 15
+mean = 0.541618
+stdev = 0.05816
+
+t_0 = 40, t_1 = 80
+num_features = 16
+mean = 0.540882
+stdev = 0.0584762
+
+t_0 = 35, t_1 = 80
+num_features = 19
+mean = 0.534559
+stdev = 0.053201
+
+t_0 = 30, t_1 = 80
+num_features = 19
+mean = 0.534559
+stdev = 0.053201
+
+t_0 = 25, t_1 = 80
+num_features = 26
+mean = 0.575294
+stdev = 0.0587603
+
+t_0 = 20, t_1 = 80
+num_features = 29
+mean = 0.570588
+stdev = 0.0522421
+
+t_0 = 15, t_1 = 80
+num_features = 32
+mean = 0.574412
+stdev = 0.0610186
+
+t_0 = 10, t_1 = 80
+num_features = 36
+mean = 0.585294
+stdev = 0.0596269
+
+t_0 = 5, t_1 = 80
+num_features = 38
+mean = 0.584853
+stdev = 0.0545053
+
+t_0 = 0, t_1 = 80
+num_features = 121
+mean = 0.591618
+stdev = 0.0583383
+
+t_0 = 75, t_1 = 75
+num_features = 4
+mean = 0.55
+stdev = 0.0545507
+
+t_0 = 70, t_1 = 75
+num_features = 5
+mean = 0.557941
+stdev = 0.0566824
+
+t_0 = 65, t_1 = 75
+num_features = 6
+mean = 0.553235
+stdev = 0.0615465
+
+t_0 = 60, t_1 = 75
+num_features = 7
+mean = 0.554706
+stdev = 0.0614516
+
+t_0 = 55, t_1 = 75
+num_features = 8
+mean = 0.551912
+stdev = 0.0585455
+
+t_0 = 50, t_1 = 75
+num_features = 12
+mean = 0.555441
+stdev = 0.0511906
+
+t_0 = 45, t_1 = 75
+num_features = 16
+mean = 0.54
+stdev = 0.0557304
+
+t_0 = 40, t_1 = 75
+num_features = 18
+mean = 0.539559
+stdev = 0.0627269
+
+t_0 = 35, t_1 = 75
+num_features = 22
+mean = 0.528529
+stdev = 0.0539054
+
+t_0 = 30, t_1 = 75
+num_features = 22
+mean = 0.528529
+stdev = 0.0539054
+
+t_0 = 25, t_1 = 75
+num_features = 29
+mean = 0.570588
+stdev = 0.0652053
+
+t_0 = 20, t_1 = 75
+num_features = 33
+mean = 0.575147
+stdev = 0.0624228
+
+t_0 = 15, t_1 = 75
+num_features = 40
+mean = 0.571765
+stdev = 0.0641446
+
+t_0 = 10, t_1 = 75
+num_features = 46
+mean = 0.564706
+stdev = 0.0616946
+
+t_0 = 5, t_1 = 75
+num_features = 50
+mean = 0.578235
+stdev = 0.0575554
+
+t_0 = 0, t_1 = 75
+num_features = 181
+mean = 0.594265
+stdev = 0.0661959
+
+t_0 = 70, t_1 = 70
+num_features = 5
+mean = 0.557941
+stdev = 0.0566824
+
+t_0 = 65, t_1 = 70
+num_features = 7
+mean = 0.571618
+stdev = 0.0639209
+
+t_0 = 60, t_1 = 70
+num_features = 8
+mean = 0.570147
+stdev = 0.0658277
+
+t_0 = 55, t_1 = 70
+num_features = 9
+mean = 0.569853
+stdev = 0.0626124
+
+t_0 = 50, t_1 = 70
+num_features = 13
+mean = 0.561471
+stdev = 0.0606475
+
+t_0 = 45, t_1 = 70
+num_features = 18
+mean = 0.549706
+stdev = 0.0655289
+
+t_0 = 40, t_1 = 70
+num_features = 24
+mean = 0.560735
+stdev = 0.0578469
+
+t_0 = 35, t_1 = 70
+num_features = 30
+mean = 0.546176
+stdev = 0.0620797
+
+t_0 = 30, t_1 = 70
+num_features = 34
+mean = 0.548382
+stdev = 0.0593103
+
+t_0 = 25, t_1 = 70
+num_features = 42
+mean = 0.596029
+stdev = 0.0652204
+
+t_0 = 20, t_1 = 70
+num_features = 48
+mean = 0.602941
+stdev = 0.0607408
+
+t_0 = 15, t_1 = 70
+num_features = 60
+mean = 0.580588
+stdev = 0.0567838
+
+t_0 = 10, t_1 = 70
+num_features = 67
+mean = 0.58
+stdev = 0.0637401
+
+t_0 = 5, t_1 = 70
+num_features = 77
+mean = 0.588824
+stdev = 0.0577071
+
+t_0 = 0, t_1 = 70
+num_features = 274
+mean = 0.599706
+stdev = 0.0647587
+
+t_0 = 65, t_1 = 65
+num_features = 7
+mean = 0.571618
+stdev = 0.0639209
+
+t_0 = 60, t_1 = 65
+num_features = 9
+mean = 0.568235
+stdev = 0.0640515
+
+t_0 = 55, t_1 = 65
+num_features = 10
+mean = 0.566176
+stdev = 0.0582138
+
+t_0 = 50, t_1 = 65
+num_features = 14
+mean = 0.561912
+stdev = 0.0611063
+
+t_0 = 45, t_1 = 65
+num_features = 19
+mean = 0.548676
+stdev = 0.0610142
+
+t_0 = 40, t_1 = 65
+num_features = 29
+mean = 0.557794
+stdev = 0.0584642
+
+t_0 = 35, t_1 = 65
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 65
+num_features = 42
+mean = 0.549706
+stdev = 0.0658581
+
+t_0 = 25, t_1 = 65
+num_features = 51
+mean = 0.59
+stdev = 0.0563939
+
+t_0 = 20, t_1 = 65
+num_features = 58
+mean = 0.592206
+stdev = 0.0625944
+
+t_0 = 15, t_1 = 65
+num_features = 79
+mean = 0.579559
+stdev = 0.0564635
+
+t_0 = 10, t_1 = 65
+num_features = 95
+mean = 0.572353
+stdev = 0.060085
+
+t_0 = 5, t_1 = 65
+num_features = 116
+mean = 0.595
+stdev = 0.0551978
+
+t_0 = 0, t_1 = 65
+num_features = 444
+mean = 0.598088
+stdev = 0.0529434
+
+t_0 = 60, t_1 = 60
+num_features = 9
+mean = 0.568235
+stdev = 0.0640515
+
+t_0 = 55, t_1 = 60
+num_features = 10
+mean = 0.566176
+stdev = 0.0582138
+
+t_0 = 50, t_1 = 60
+num_features = 14
+mean = 0.561912
+stdev = 0.0611063
+
+t_0 = 45, t_1 = 60
+num_features = 19
+mean = 0.548676
+stdev = 0.0610142
+
+t_0 = 40, t_1 = 60
+num_features = 29
+mean = 0.557794
+stdev = 0.0584642
+
+t_0 = 35, t_1 = 60
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 60
+num_features = 43
+mean = 0.543824
+stdev = 0.0575968
+
+t_0 = 25, t_1 = 60
+num_features = 53
+mean = 0.583088
+stdev = 0.0584686
+
+t_0 = 20, t_1 = 60
+num_features = 64
+mean = 0.583235
+stdev = 0.0628483
+
+t_0 = 15, t_1 = 60
+num_features = 93
+mean = 0.581618
+stdev = 0.0642489
+
+t_0 = 10, t_1 = 60
+num_features = 121
+mean = 0.595735
+stdev = 0.0553572
+
+t_0 = 5, t_1 = 60
+num_features = 155
+mean = 0.600882
+stdev = 0.0598448
+
+t_0 = 0, t_1 = 60
+num_features = 536
+mean = 0.591912
+stdev = 0.051297
+
+t_0 = 55, t_1 = 55
+num_features = 10
+mean = 0.566176
+stdev = 0.0582138
+
+t_0 = 50, t_1 = 55
+num_features = 14
+mean = 0.561912
+stdev = 0.0611063
+
+t_0 = 45, t_1 = 55
+num_features = 19
+mean = 0.548676
+stdev = 0.0610142
+
+t_0 = 40, t_1 = 55
+num_features = 29
+mean = 0.557794
+stdev = 0.0584642
+
+t_0 = 35, t_1 = 55
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 55
+num_features = 46
+mean = 0.550588
+stdev = 0.0604668
+
+t_0 = 25, t_1 = 55
+num_features = 57
+mean = 0.578824
+stdev = 0.0617479
+
+t_0 = 20, t_1 = 55
+num_features = 72
+mean = 0.578529
+stdev = 0.0634306
+
+t_0 = 15, t_1 = 55
+num_features = 106
+mean = 0.579706
+stdev = 0.056121
+
+t_0 = 10, t_1 = 55
+num_features = 151
+mean = 0.587059
+stdev = 0.0552863
+
+t_0 = 5, t_1 = 55
+num_features = 208
+mean = 0.581176
+stdev = 0.062685
+
+t_0 = 0, t_1 = 55
+num_features = 719
+mean = 0.581765
+stdev = 0.0613191
+
+t_0 = 50, t_1 = 50
+num_features = 14
+mean = 0.561912
+stdev = 0.0611063
+
+t_0 = 45, t_1 = 50
+num_features = 19
+mean = 0.548676
+stdev = 0.0610142
+
+t_0 = 40, t_1 = 50
+num_features = 29
+mean = 0.557794
+stdev = 0.0584642
+
+t_0 = 35, t_1 = 50
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 50
+num_features = 46
+
+--------------------
+dataset_name = PTC_MR
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 50, t_1 = 50
+num_features = 14
+mean = 0.561912
+stdev = 0.0611063
+
+t_0 = 45, t_1 = 50
+num_features = 19
+mean = 0.548676
+stdev = 0.0610142
+
+t_0 = 40, t_1 = 50
+num_features = 29
+mean = 0.557794
+stdev = 0.0584642
+
+t_0 = 35, t_1 = 50
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 50
+num_features = 46
+mean = 0.550588
+stdev = 0.0604668
+
+t_0 = 25, t_1 = 50
+num_features = 58
+mean = 0.575588
+stdev = 0.0621146
+
+t_0 = 20, t_1 = 50
+num_features = 77
+mean = 0.571029
+stdev = 0.0684118
+
+t_0 = 15, t_1 = 50
+num_features = 120
+mean = 0.581029
+stdev = 0.0582136
+
+t_0 = 10, t_1 = 50
+num_features = 183
+mean = 0.578088
+stdev = 0.061754
+
+t_0 = 5, t_1 = 50
+num_features = 284
+mean = 0.583235
+stdev = 0.0619472
+
+t_0 = 45, t_1 = 45
+num_features = 19
+mean = 0.548676
+stdev = 0.0610142
+
+t_0 = 40, t_1 = 45
+num_features = 29
+mean = 0.557794
+stdev = 0.0584642
+
+t_0 = 35, t_1 = 45
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 45
+num_features = 46
+mean = 0.550588
+stdev = 0.0604668
+
+t_0 = 25, t_1 = 45
+num_features = 61
+mean = 0.576765
+stdev = 0.0624119
+
+t_0 = 20, t_1 = 45
+num_features = 83
+mean = 0.580735
+stdev = 0.0631667
+
+t_0 = 15, t_1 = 45
+num_features = 134
+mean = 0.587794
+stdev = 0.0604716
+
+t_0 = 10, t_1 = 45
+num_features = 204
+mean = 0.583235
+stdev = 0.0601404
+
+t_0 = 5, t_1 = 45
+num_features = 350
+mean = 0.588382
+stdev = 0.0663069
+
+t_0 = 40, t_1 = 40
+num_features = 29
+mean = 0.557794
+stdev = 0.0584642
+
+t_0 = 35, t_1 = 40
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 40
+num_features = 46
+mean = 0.550588
+stdev = 0.0604668
+
+t_0 = 25, t_1 = 40
+num_features = 61
+mean = 0.576765
+stdev = 0.0624119
+
+t_0 = 20, t_1 = 40
+num_features = 88
+mean = 0.58
+stdev = 0.0662686
+
+t_0 = 15, t_1 = 40
+num_features = 150
+mean = 0.581471
+stdev = 0.0702326
+
+t_0 = 10, t_1 = 40
+num_features = 242
+mean = 0.569412
+stdev = 0.0651748
+
+t_0 = 35, t_1 = 35
+
+--------------------
+dataset_name = PTC_MR
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 35, t_1 = 35
+num_features = 37
+mean = 0.543382
+stdev = 0.0596767
+
+t_0 = 30, t_1 = 35
+num_features = 46
+mean = 0.550588
+stdev = 0.0604668
+
+t_0 = 25, t_1 = 35
+num_features = 61
+mean = 0.576765
+stdev = 0.0624119
+
+t_0 = 20, t_1 = 35
+num_features = 88
+mean = 0.58
+stdev = 0.0662686
+
+t_0 = 15, t_1 = 35
+num_features = 165
+mean = 0.587794
+stdev = 0.0600769
+
+t_0 = 30, t_1 = 30
+num_features = 46
+mean = 0.550588
+stdev = 0.0604668
+
+t_0 = 25, t_1 = 30
+num_features = 61
+mean = 0.576765
+stdev = 0.0624119
+
+t_0 = 20, t_1 = 30
+num_features = 88
+mean = 0.58
+stdev = 0.0662686
+
+t_0 = 15, t_1 = 30
+num_features = 165
+mean = 0.587794
+stdev = 0.0600769
+
+--------------------
+dataset_name = PTC_MR
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 25, t_1 = 25
+num_features = 61
+mean = 0.576765
+stdev = 0.0624119
+
+t_0 = 20, t_1 = 25
+num_features = 88
+mean = 0.58
+stdev = 0.0662686
+
+t_0 = 15, t_1 = 25
+num_features = 165
+mean = 0.587794
+stdev = 0.0600769
+
+--------------------
+dataset_name = PTC_MR
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 20, t_1 = 20
+num_features = 88
+mean = 0.58
+stdev = 0.0662686
+
+t_0 = 15, t_1 = 20
+num_features = 165
+mean = 0.587794
+stdev = 0.0600769
+
+t_0 = 15, t_1 = 15
+num_features = 165
+mean = 0.587794
+stdev = 0.0600769

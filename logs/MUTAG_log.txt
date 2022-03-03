@@ -1,0 +1,637 @@
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 95, t_1 = 95
+num_features = 50
+mean = 0.665405
+stdev = 0.0703513
+
+t_0 = 95, t_1 = 100
+num_features = 33
+mean = 0.672973
+stdev = 0.070426
+
+t_0 = 90, t_1 = 90
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 95, t_1 = 95
+num_features = 50
+mean = 0.665405
+stdev = 0.0703513
+
+t_0 = 95, t_1 = 100
+num_features = 33
+mean = 0.672973
+stdev = 0.070426
+
+t_0 = 90, t_1 = 90
+num_features = 50
+mean = 0.665405
+stdev = 0.0703513
+
+t_0 = 90, t_1 = 95
+num_features = 50
+mean = 0.665405
+stdev = 0.0703513
+
+t_0 = 90, t_1 = 100
+num_features = 33
+mean = 0.672973
+stdev = 0.070426
+
+t_0 = 85, t_1 = 85
+num_features = 50
+mean = 0.665405
+stdev = 0.0703513
+
+t_0 = 85, t_1 = 90
+num_features = 50
+mean = 0.665405
+stdev = 0.0703513
+
+t_0 = 85, t_1 = 95
+num_features = 50
+mean = 0.665405
+stdev = 0.0703513
+
+t_0 = 85, t_1 = 100
+num_features = 33
+mean = 0.672973
+stdev = 0.070426
+
+t_0 = 80, t_1 = 80
+num_features = 51
+mean = 0.735676
+stdev = 0.0703305
+
+t_0 = 80, t_1 = 85
+num_features = 51
+mean = 0.735676
+stdev = 0.0703305
+
+t_0 = 80, t_1 = 90
+num_features = 51
+mean = 0.735676
+stdev = 0.0703305
+
+t_0 = 80, t_1 = 95
+num_features = 51
+mean = 0.735676
+stdev = 0.0703305
+
+t_0 = 80, t_1 = 100
+num_features = 33
+mean = 0.672973
+stdev = 0.070426
+
+t_0 = 75, t_1 = 75
+num_features = 65
+mean = 0.741081
+stdev = 0.0703928
+
+t_0 = 75, t_1 = 80
+num_features = 65
+mean = 0.741081
+stdev = 0.0703928
+
+t_0 = 75, t_1 = 85
+num_features = 65
+mean = 0.741081
+stdev = 0.0703928
+
+t_0 = 75, t_1 = 90
+num_features = 65
+mean = 0.741081
+stdev = 0.0703928
+
+t_0 = 75, t_1 = 95
+num_features = 65
+mean = 0.741081
+stdev = 0.0703928
+
+t_0 = 75, t_1 = 100
+num_features = 36
+mean = 0.726216
+stdev = 0.0689751
+
+t_0 = 70, t_1 = 70
+num_features = 102
+mean = 0.788108
+stdev = 0.0607621
+
+t_0 = 70, t_1 = 75
+num_features = 102
+mean = 0.788108
+stdev = 0.0607621
+
+t_0 = 70, t_1 = 80
+num_features = 102
+mean = 0.788108
+stdev = 0.0607621
+
+t_0 = 70, t_1 = 85
+num_features = 95
+mean = 0.768378
+stdev = 0.0632981
+
+t_0 = 70, t_1 = 90
+num_features = 79
+mean = 0.759189
+stdev = 0.0624664
+
+t_0 = 70, t_1 = 95
+num_features = 78
+mean = 0.764865
+stdev = 0.0613341
+
+t_0 = 70, t_1 = 100
+num_features = 38
+mean = 0.775135
+stdev = 0.0684675
+
+t_0 = 65, t_1 = 65
+num_features = 185
+mean = 0.801622
+stdev = 0.064551
+
+t_0 = 65, t_1 = 70
+num_features = 185
+mean = 0.801622
+stdev = 0.064551
+
+t_0 = 65, t_1 = 75
+num_features = 184
+mean = 0.8
+stdev = 0.0658706
+
+t_0 = 65, t_1 = 80
+num_features = 172
+mean = 0.798649
+stdev = 0.0621475
+
+t_0 = 65, t_1 = 85
+num_features = 142
+mean = 0.79027
+stdev = 0.0616453
+
+t_0 = 65, t_1 = 90
+num_features = 102
+mean = 0.783784
+stdev = 0.0659814
+
+t_0 = 65, t_1 = 95
+num_features = 97
+mean = 0.774865
+stdev = 0.0631595
+
+t_0 = 65, t_1 = 100
+num_features = 38
+mean = 0.775135
+stdev = 0.0684675
+
+t_0 = 60, t_1 = 60
+num_features = 243
+mean = 0.810541
+stdev = 0.0567561
+
+t_0 = 60, t_1 = 65
+num_features = 243
+mean = 0.810541
+stdev = 0.0567561
+
+t_0 = 60, t_1 = 70
+num_features = 241
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 60, t_1 = 60
+num_features = 243
+mean = 0.810541
+stdev = 0.0567561
+
+t_0 = 60, t_1 = 65
+num_features = 243
+mean = 0.810541
+stdev = 0.0567561
+
+t_0 = 60, t_1 = 70
+num_features = 241
+mean = 0.806216
+stdev = 0.0629277
+
+t_0 = 60, t_1 = 75
+num_features = 231
+mean = 0.808378
+stdev = 0.0631641
+
+t_0 = 60, t_1 = 80
+num_features = 202
+mean = 0.804054
+stdev = 0.06777
+
+t_0 = 60, t_1 = 85
+num_features = 150
+mean = 0.782703
+stdev = 0.0626794
+
+t_0 = 60, t_1 = 90
+num_features = 108
+mean = 0.783784
+stdev = 0.0641856
+
+t_0 = 60, t_1 = 95
+num_features = 101
+mean = 0.776216
+stdev = 0.0648739
+
+t_0 = 60, t_1 = 100
+num_features = 38
+mean = 0.775135
+stdev = 0.0684675
+
+t_0 = 55, t_1 = 55
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 55, t_1 = 100
+num_features = 38
+mean = 0.775135
+stdev = 0.0684675
+
+t_0 = 50, t_1 = 100
+num_features = 43
+mean = 0.771081
+stdev = 0.0689539
+
+t_0 = 45, t_1 = 100
+num_features = 43
+mean = 0.771081
+stdev = 0.0689539
+
+t_0 = 40, t_1 = 100
+num_features = 47
+mean = 0.818919
+stdev = 0.0610954
+
+t_0 = 55, t_1 = 95
+num_features = 101
+mean = 0.776216
+stdev = 0.0648739
+
+t_0 = 50, t_1 = 95
+num_features = 112
+mean = 0.774054
+stdev = 0.0802225
+
+t_0 = 45, t_1 = 95
+num_features = 113
+mean = 0.776757
+stdev = 0.0706456
+
+t_0 = 40, t_1 = 95
+num_features = 134
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 55, t_1 = 100
+num_features = 38
+mean = 0.775135
+stdev = 0.0684675
+
+t_0 = 50, t_1 = 100
+num_features = 43
+mean = 0.771081
+stdev = 0.0689539
+
+t_0 = 45, t_1 = 100
+num_features = 43
+mean = 0.771081
+stdev = 0.0689539
+
+t_0 = 40, t_1 = 100
+num_features = 47
+mean = 0.818919
+stdev = 0.0610954
+
+t_0 = 35, t_1 = 100
+num_features = 49
+mean = 0.821351
+stdev = 0.0633719
+
+t_0 = 30, t_1 = 100
+num_features = 49
+mean = 0.821351
+stdev = 0.0633719
+
+t_0 = 25, t_1 = 100
+num_features = 49
+mean = 0.821351
+stdev = 0.0633719
+
+t_0 = 20, t_1 = 100
+num_features = 55
+mean = 0.81973
+stdev = 0.0611618
+
+t_0 = 15, t_1 = 100
+num_features = 75
+mean = 0.808649
+stdev = 0.0603956
+
+t_0 = 10, t_1 = 100
+num_features = 92
+mean = 0.812162
+stdev = 0.0573807
+
+t_0 = 5, t_1 = 100
+num_features = 116
+mean = 0.794054
+stdev = 0.0657352
+
+t_0 = 0, t_1 = 100
+num_features = 349
+mean = 0.815135
+stdev = 0.0630049
+
+t_0 = 55, t_1 = 95
+num_features = 101
+mean = 0.776216
+stdev = 0.0648739
+
+t_0 = 50, t_1 = 95
+num_features = 112
+mean = 0.774054
+stdev = 0.0802225
+
+t_0 = 45, t_1 = 95
+num_features = 113
+mean = 0.776757
+stdev = 0.0706456
+
+t_0 = 40, t_1 = 95
+num_features = 134
+mean = 0.788108
+stdev = 0.0642675
+
+t_0 = 35, t_1 = 95
+num_features = 140
+mean = 0.791892
+stdev = 0.0558486
+
+t_0 = 30, t_1 = 95
+num_features = 141
+mean = 0.789189
+stdev = 0.0622209
+
+t_0 = 25, t_1 = 95
+num_features = 151
+mean = 0.789459
+stdev = 0.0610709
+
+t_0 = 20, t_1 = 95
+num_features = 160
+mean = 0.787297
+stdev = 0.0576703
+
+t_0 = 15, t_1 = 95
+num_features = 192
+mean = 0.780541
+stdev = 0.0629538
+
+t_0 = 10, t_1 = 95
+num_features = 221
+mean = 0.788108
+stdev = 0.0588072
+
+t_0 = 5, t_1 = 95
+num_features = 338
+mean = 0.793243
+stdev = 0.0630808
+
+t_0 = 0, t_1 = 95
+num_features = 2054
+mean = 0.811081
+stdev = 0.0674588
+
+t_0 = 55, t_1 = 90
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 55, t_1 = 90
+num_features = 108
+mean = 0.783784
+stdev = 0.0641856
+
+t_0 = 50, t_1 = 90
+num_features = 119
+mean = 0.782703
+stdev = 0.0627958
+
+t_0 = 45, t_1 = 90
+num_features = 120
+mean = 0.784324
+stdev = 0.0606731
+
+t_0 = 40, t_1 = 90
+num_features = 141
+mean = 0.782703
+stdev = 0.0644038
+
+t_0 = 35, t_1 = 90
+num_features = 147
+mean = 0.779459
+stdev = 0.0623054
+
+t_0 = 30, t_1 = 90
+num_features = 148
+mean = 0.782973
+stdev = 0.0607303
+
+t_0 = 25, t_1 = 90
+num_features = 158
+mean = 0.788108
+stdev = 0.0541513
+
+t_0 = 20, t_1 = 90
+num_features = 186
+mean = 0.80027
+stdev = 0.0582048
+
+t_0 = 15, t_1 = 90
+num_features = 219
+mean = 0.796486
+stdev = 0.0642374
+
+t_0 = 10, t_1 = 90
+num_features = 255
+mean = 0.800811
+stdev = 0.0587992
+
+t_0 = 5, t_1 = 90
+num_features = 412
+mean = 0.800541
+stdev = 0.0668371
+
+t_0 = 55, t_1 = 85
+num_features = 153
+mean = 0.785676
+stdev = 0.0657879
+
+t_0 = 50, t_1 = 85
+num_features = 165
+mean = 0.795405
+stdev = 0.0574927
+
+t_0 = 45, t_1 = 85
+num_features = 174
+mean = 0.798378
+stdev = 0.05877
+
+t_0 = 40, t_1 = 85
+num_features = 200
+mean = 0.798378
+stdev = 0.056359
+
+t_0 = 35, t_1 = 85
+num_features = 214
+mean = 0.800811
+stdev = 0.0612334
+
+t_0 = 30, t_1 = 85
+num_features = 216
+mean = 0.804595
+stdev = 0.0525264
+
+t_0 = 25, t_1 = 85
+num_features = 228
+mean = 0.799189
+stdev = 0.0593679
+
+t_0 = 20, t_1 = 85
+num_features = 257
+mean = 0.814865
+stdev = 0.0534254
+
+t_0 = 15, t_1 = 85
+num_features = 293
+mean = 0.819189
+stdev = 0.054417
+
+t_0 = 10, t_1 = 85
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 55, t_1 = 80
+num_features = 226
+mean = 0.79973
+stdev = 0.059225
+
+t_0 = 50, t_1 = 80
+num_features = 239
+mean = 0.811892
+stdev = 0.0599391
+
+t_0 = 45, t_1 = 80
+num_features = 251
+mean = 0.811351
+stdev = 0.0577114
+
+t_0 = 40, t_1 = 80
+num_features = 303
+mean = 0.815946
+stdev = 0.0614762
+
+t_0 = 55, t_1 = 75
+num_features = 278
+mean = 0.808108
+stdev = 0.062747
+
+t_0 = 55, t_1 = 70
+num_features = 296
+mean = 0.810541
+stdev = 0.061808
+
+t_0 = 55, t_1 = 65
+
+--------------------
+dataset_name = MUTAG
+use_edge_labels = 0
+max_size = 10 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 5
+num_repetitions = 20
+
+t_0 = 55, t_1 = 55
+num_features = 298
+mean = 0.80027
+stdev = 0.0686822
+
+t_0 = 50, t_1 = 50
+
