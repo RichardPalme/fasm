@@ -61,16 +61,16 @@ void PatternGrowth::pattern_growth() {
     C.insert(P_hash);
     F.insert(P_hash);
 
-    _pattern_growth(P, support_set);
+    return _pattern_growth(P, support_set);
 }
 
 
-void PatternGrowth::_pattern_growth(
+bool PatternGrowth::_pattern_growth(
         Graph &P,
         std::vector<TransactionData> &support_set) {
 
     if (P.num_edges() >= max_size) {
-        return;
+        return false; // don't grow the pattern, but continue the recursion
     }
 
     if (P.num_nodes() == 0) {
@@ -81,7 +81,9 @@ void PatternGrowth::_pattern_growth(
             // local copy so that support_set does not get changed
             std::vector<TransactionData> S = support_set;
             _update_naive_lb(P, H, S, alpha, NONE());
-            _inner_loop(H, S);
+            if (_inner_loop(H, S)) {
+                return true;
+            }
         }
     }
 
@@ -107,7 +109,9 @@ void PatternGrowth::_pattern_growth(
 
                 std::vector<TransactionData> S = support_set;
                 _update_naive_lb(P, H, S, NONE(), beta);
-                _inner_loop(H, S);
+                if (_inner_loop(H, S)) {
+                    return true;
+                }
             }
         }
 
@@ -119,10 +123,13 @@ void PatternGrowth::_pattern_growth(
 
                 std::vector<TransactionData> S = support_set;
                 _update_naive_lb(P, H, S, alpha, beta);
-                _inner_loop(H, S);
+                if (_inner_loop(H, S)) {
+                    return true;
+                }
             }
         }
     }
+    return false;
 }
 
 
@@ -178,7 +185,7 @@ void PatternGrowth::_update_naive_lb(
 }
 
 
-void PatternGrowth::_inner_loop(
+bool PatternGrowth::_inner_loop(
         Graph &H,
         std::vector<TransactionData> &S) {
 
@@ -195,7 +202,15 @@ void PatternGrowth::_inner_loop(
                 std::cout << "pattern " << pattern_count << " has size ";
                 std::cout << H.num_edges() << std::endl;
 
-                _pattern_growth(H, S);
+                // exit recursion
+                if (pattern_count > max_num_patterns) {
+                    std::cout << "aborted!" << std::endl;
+                    return true;
+                }
+
+                if (_pattern_growth(H, S)) {
+                    return true;
+                }
             }
         }
     } else {
@@ -208,14 +223,19 @@ void PatternGrowth::_inner_loop(
                 std::cout << "pattern " << pattern_count << " has size ";
                 std::cout << H.num_edges() << std::endl;
 
-                if (output.size() > max_num_patterns) {
-                    exit(EXIT_FAILURE);
+                // exit recursion
+                if (pattern_count > max_num_patterns) {
+                    std::cout << "aborted!" << std::endl;
+                    return true;
                 }
 
-                _pattern_growth(H, S);
+                if (_pattern_growth(H, S)) {
+                    return true;
+                }
             }
         }
     }
+    return false;
 }
 
 

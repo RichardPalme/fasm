@@ -48,7 +48,7 @@ int main() {
     database[1] = G_2;
 #endif
 
-    std::string dataset_name = "PTC_MR";
+    std::string dataset_name = "MUTAG";
 
     std::unordered_map<GraphId, Graph> full_database;
     std::unordered_map<GraphId, Graph> database;
@@ -57,11 +57,11 @@ int main() {
     size_t num_samples = database.size();
 
     std::vector<size_t> t(2);
-    double support = 10;
+    double support = 20; // between 0 and 100
     t[0] = std::lround(support / 100 * num_samples);
     t[1] = t[0];
     size_t max_size = 10;
-    size_t max_num_patterns = 1000;
+    size_t max_num_patterns = 10;
     size_t wl_height = 10;
     bool exact_gi = true;
     bool apriori = true;

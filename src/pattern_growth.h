@@ -37,11 +37,12 @@ public:
             bool apriori=true,
             GEDMethod ged_method=F2) :
         database{database}, t{t}, max_size{max_size},
+        max_num_patterns{max_num_patterns},
         wl_height{wl_height}, exact_gi{exact_gi}, apriori{apriori},
         ged_method{ged_method} {}
 
     void extract_label_alphabet(void);
-    void pattern_growth(void);
+    bool pattern_growth(void); // return value of true means the program aborted
 
 private:
     std::unordered_set<std::string> F;
@@ -51,7 +52,7 @@ private:
 
     std::string graph_hash(Graph &P);
 
-    void _pattern_growth(
+    bool _pattern_growth(
         Graph &P,
         std::vector<TransactionData> &support_set);
 
@@ -62,7 +63,7 @@ private:
         int alpha,
         int beta);
 
-    void _inner_loop(
+    bool _inner_loop(
         Graph &H,
         std::vector<TransactionData> &S);
 

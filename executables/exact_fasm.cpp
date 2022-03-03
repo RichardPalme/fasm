@@ -20,11 +20,11 @@ fs::path storage_path(
     return root_dir() / "data" / "experiments" / file_name;
 }
 
-void feature_mining(PatternGrowth &patgrow, fs::path &stored_vectors) {
+bool feature_mining(PatternGrowth &patgrow, fs::path &stored_vectors) {
     size_t num_samples = patgrow.database.size();
 
     patgrow.extract_label_alphabet();
-    patgrow.pattern_growth();
+    bool max_patterns_exceeded = patgrow.pattern_growth();
 
     size_t num_features = patgrow.output.size();
 
@@ -61,6 +61,7 @@ void feature_mining(PatternGrowth &patgrow, fs::path &stored_vectors) {
     }
 
     dlib::serialize(stored_vectors) << samples << labels;
+    return max_patterns_exceeded;
 }
 
 std::pair<double, double> cross_validate(
@@ -72,7 +73,7 @@ std::pair<double, double> cross_validate(
     dlib::svm_c_linear_dcd_trainer<kernel_type> trainer;
 
     std::vector<double> C{1};
-    for (auto i : {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}) {
+    for (auto i : {1, 3, 5, 7, 9, 11}) {
         C.push_back(std::pow(2., -1*i));
         C.push_back(std::pow(2., i));
     }
@@ -196,7 +197,7 @@ std::pair<double, double> cross_validate(
 int main() {
     std::string dataset_name = "MUTAG";
     size_t max_size = 10;
-    size_t max_num_patterns = 100;
+    size_t max_num_patterns = 400;
     size_t wl_height = 10;
     bool exact_gi = true;
     bool apriori = true;
@@ -254,12 +255,14 @@ int main() {
             std::cout << "t_0 = " << t_0 << ", t_1 = " << t_1 << std::endl;
             log << "t_0 = " << t_0 << ", t_1 = " << t_1 << std::endl;
 
-            fs::path stored_vectors = storage_path(
-                    dataset_name, t_0, t_1);
+            fs::path stored_vectors = storage_path(dataset_name, t_0, t_1);
 
             if (not fs::exists(stored_vectors)) {
                 patgrow.t = t;
-                feature_mining(patgrow, stored_vectors);
+                // if we find too many patterns
+                if (feature_mining(patgrow, stored_vectors)) {
+                    break;
+                }
             }
 
             std::vector<sample_type> samples;
