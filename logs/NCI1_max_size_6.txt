@@ -1,0 +1,358 @@
+
+--------------------
+dataset_name = NCI1
+max_size = 6 
+max_num_patterns = 120 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 15
+
+t_0 = 100, t_1 = 100
+num_features = 0
+Using SGED features
+
+--------------------
+dataset_name = NCI1
+max_size = 6 
+max_num_patterns = 120 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 10
+
+t_0 = 100, t_1 = 100
+num_features = 0
+Using SGED features
+mean = 0.479951
+stdev = 0.0164143
+
+Using binary features
+mean = 0.479951
+stdev = 0.0164143
+
+t_0 = 90, t_1 = 100
+num_features = 2
+Using SGED features
+mean = 0.499027
+stdev = 0.025228
+
+Using binary features
+mean = 0.499611
+stdev = 0.0268594
+
+t_0 = 80, t_1 = 100
+num_features = 2
+Using SGED features
+mean = 0.499027
+stdev = 0.025228
+
+Using binary features
+mean = 0.499611
+stdev = 0.0268594
+
+t_0 = 70, t_1 = 100
+num_features = 3
+Using SGED features
+mean = 0.519708
+stdev = 0.0280661
+
+Using binary features
+mean = 0.521095
+stdev = 0.0284662
+
+t_0 = 60, t_1 = 100
+num_features = 3
+Using SGED features
+mean = 0.519708
+stdev = 0.0280661
+
+Using binary features
+mean = 0.521095
+stdev = 0.0284662
+
+t_0 = 50, t_1 = 100
+num_features = 3
+Using SGED features
+mean = 0.519708
+stdev = 0.0280661
+
+Using binary features
+mean = 0.521095
+stdev = 0.0284662
+
+t_0 = 40, t_1 = 100
+num_features = 3
+Using SGED features
+mean = 0.519708
+stdev = 0.0280661
+
+Using binary features
+mean = 0.521095
+stdev = 0.0284662
+
+t_0 = 30, t_1 = 100
+num_features = 3
+Using SGED features
+mean = 0.519708
+stdev = 0.0280661
+
+Using binary features
+mean = 0.521095
+stdev = 0.0284662
+
+t_0 = 20, t_1 = 100
+num_features = 5
+Using SGED features
+mean = 0.530852
+stdev = 0.0257526
+
+Using binary features
+mean = 0.528467
+stdev = 0.0278054
+
+t_0 = 10, t_1 = 100
+num_features = 5
+Using SGED features
+mean = 0.530852
+stdev = 0.0257526
+
+Using binary features
+mean = 0.528467
+stdev = 0.0278054
+
+t_0 = 0, t_1 = 100
+num_features = 37
+Using SGED features
+
+--------------------
+dataset_name = NCI1
+max_size = 6 
+max_num_patterns = 120 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 10
+
+t_0 = 90, t_1 = 90
+num_features = 7
+t_0 = 80, t_1 = 90
+num_features = 18
+t_0 = 70, t_1 = 90
+num_features = 30
+Using SGED features
+mean = 0.577932
+stdev = 0.0238801
+
+Using binary features
+mean = 0.576277
+stdev = 0.0269148
+
+t_0 = 60, t_1 = 90
+num_features = 49
+Using SGED features
+mean = 0.628637
+stdev = 0.0228443
+
+Using binary features
+mean = 0.629684
+stdev = 0.0257862
+
+t_0 = 50, t_1 = 90
+num_features = 71
+Using SGED features
+mean = 0.636886
+stdev = 0.0223742
+
+Using binary features
+mean = 0.640316
+stdev = 0.025386
+
+t_0 = 40, t_1 = 90
+num_features = 92
+Using SGED features
+
+--------------------
+dataset_name = NCI1
+max_size = 6 
+max_num_patterns = 100 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 10
+
+t_0 = 80, t_1 = 80
+num_features = 18
+t_0 = 70, t_1 = 80
+num_features = 30
+Using SGED features
+mean = 0.577932
+stdev = 0.0238801
+
+Using binary features
+mean = 0.576277
+stdev = 0.0269148
+
+t_0 = 60, t_1 = 80
+num_features = 49
+Using SGED features
+mean = 0.628637
+stdev = 0.0228443
+
+Using binary features
+mean = 0.629684
+stdev = 0.0257862
+
+t_0 = 50, t_1 = 80
+num_features = 71
+Using SGED features
+mean = 0.636886
+stdev = 0.0223742
+
+Using binary features
+mean = 0.640316
+stdev = 0.025386
+
+t_0 = 40, t_1 = 80
+num_features = 93
+Using SGED features
+mean = 0.66236
+stdev = 0.0226731
+
+Using binary features
+mean = 0.663698
+stdev = 0.0284465
+
+t_0 = 30, t_1 = 80
+
+--------------------
+dataset_name = NCI1
+max_size = 6 
+max_num_patterns = 100 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 10
+
+t_0 = 70, t_1 = 70
+num_features = 30
+Using SGED features
+mean = 0.577932
+stdev = 0.0238801
+
+Using binary features
+mean = 0.576277
+stdev = 0.0269148
+
+t_0 = 60, t_1 = 70
+num_features = 49
+Using SGED features
+mean = 0.628637
+stdev = 0.0228443
+
+Using binary features
+mean = 0.629684
+stdev = 0.0257862
+
+t_0 = 50, t_1 = 70
+num_features = 71
+Using SGED features
+mean = 0.636886
+stdev = 0.0223742
+
+Using binary features
+mean = 0.640316
+stdev = 0.025386
+
+t_0 = 40, t_1 = 70
+num_features = 93
+Using SGED features
+mean = 0.66236
+stdev = 0.0226731
+
+Using binary features
+mean = 0.663698
+stdev = 0.0284465
+
+t_0 = 30, t_1 = 70
+t_0 = 60, t_1 = 60
+num_features = 49
+Using SGED features
+mean = 0.628637
+stdev = 0.0228443
+
+Using binary features
+mean = 0.629684
+stdev = 0.0257862
+
+t_0 = 50, t_1 = 60
+num_features = 71
+Using SGED features
+mean = 0.636886
+stdev = 0.0223742
+
+Using binary features
+mean = 0.640316
+stdev = 0.025386
+
+t_0 = 40, t_1 = 60
+num_features = 93
+Using SGED features
+mean = 0.66236
+stdev = 0.0226731
+
+Using binary features
+mean = 0.663698
+stdev = 0.0284465
+
+--------------------
+dataset_name = NCI1
+max_size = 6 
+max_num_patterns = 100 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 10
+
+t_0 = 50, t_1 = 50
+num_features = 71
+Using SGED features
+mean = 0.636886
+stdev = 0.0223742
+
+Using binary features
+mean = 0.640316
+stdev = 0.025386
+
+--------------------
+dataset_name = NCI1
+max_size = 6 
+max_num_patterns = 100 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 10
+
+t_0 = 40, t_1 = 40
+num_features = 93
+Using SGED features
+mean = 0.66236
+stdev = 0.0226731
+
+Using binary features
+mean = 0.663698
+stdev = 0.0284465

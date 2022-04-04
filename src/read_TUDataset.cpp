@@ -62,6 +62,9 @@ void read_TUDataset(
     graph_id = 1;
 
     while (class_labels >> class_label) {
+        if (dataset_name == "NCI1" and class_label == 0) {
+            class_label = -1;
+        }
         dataset[graph_id].m_class_label = class_label;
         graph_id += 1;
     }

@@ -39,7 +39,7 @@ std::string PatternGrowth::graph_hash(Graph &P) {
     }
 }
 
-void PatternGrowth::pattern_growth() {
+bool PatternGrowth::pattern_growth() {
     output.clear();
     F.clear();
     C.clear();

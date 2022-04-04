@@ -23,7 +23,7 @@ grbgetkey will ask where to store the license key. Make sure to store the licens
 Make sure that external/gedlib/src/CMakelists.txt does not add the
 mtypesgedlib library
 1. `cd external/gedlib`
-2. `python install.py --gurobi ~/gurobi951/linux64 --lib mytypes,size_t,int,int`
+2. `python3 install.py --gurobi ~/gurobi951/linux64 --lib mytypes,size_t,int,int`
 
 ### Install this Repo
 

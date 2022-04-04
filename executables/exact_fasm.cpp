@@ -25,6 +25,9 @@ bool feature_mining(PatternGrowth &patgrow, fs::path &stored_vectors) {
 
     patgrow.extract_label_alphabet();
     bool max_patterns_exceeded = patgrow.pattern_growth();
+    if (max_patterns_exceeded) {
+        return true;
+    }
 
     size_t num_features = patgrow.output.size();
 
@@ -61,7 +64,7 @@ bool feature_mining(PatternGrowth &patgrow, fs::path &stored_vectors) {
     }
 
     dlib::serialize(stored_vectors) << samples << labels;
-    return max_patterns_exceeded;
+    return false;
 }
 
 std::pair<double, double> cross_validate(
@@ -195,9 +198,9 @@ std::pair<double, double> cross_validate(
 
 
 int main() {
-    std::string dataset_name = "MUTAG";
-    size_t max_size = 10;
-    size_t max_num_patterns = 400;
+    std::string dataset_name = "NCI1";
+    size_t max_size = 6;
+    size_t max_num_patterns = 100;
     size_t wl_height = 10;
     bool exact_gi = true;
     bool apriori = true;
@@ -239,8 +242,8 @@ int main() {
             apriori,
             ged_method);
 
-    size_t folds = 5;
-    size_t num_repetitions = 20;
+    size_t folds = 10;
+    size_t num_repetitions = 10;
     std::cout << "folds = " << folds << std::endl;
     std::cout << "num_repetitions = " << num_repetitions << std::endl;
     std::cout << std::endl;
@@ -248,7 +251,7 @@ int main() {
     log << "num_repetitions = " << num_repetitions << std::endl;
     log << std::endl;
 
-    for (int t_1 = 100; t_1 >= 0; t_1 -= 10) {
+    for (int t_1 = 40; t_1 >= 0; t_1 -= 10) {
         for (int t_0 = t_1; t_0 >= 0; t_0 -= 10) {
             t[0] = std::lround((double) t_0 / 100 * num_samples);
             t[1] = std::lround((double) t_1 / 100 * num_samples);
@@ -259,7 +262,7 @@ int main() {
 
             if (not fs::exists(stored_vectors)) {
                 patgrow.t = t;
-                // if we find too many patterns
+                // if we find too many patterns, break out of the inner loop
                 if (feature_mining(patgrow, stored_vectors)) {
                     break;
                 }
@@ -272,6 +275,9 @@ int main() {
             size_t num_features = samples[0].size();
             std::cout << "num_features = " << num_features << std::endl;
             log << "num_features = " << num_features << std::endl;
+            if (num_features < 30) {
+                continue;
+            }
 
             std::vector<sample_type> binary_samples;
             std::vector<double> labels_copy = labels;
