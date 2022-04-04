@@ -198,9 +198,9 @@ std::pair<double, double> cross_validate(
 
 
 int main() {
-    std::string dataset_name = "NCI1";
-    size_t max_size = 6;
-    size_t max_num_patterns = 100;
+    std::string dataset_name = "MUTAG";
+    size_t max_size = 9;
+    size_t max_num_patterns = 150;
     size_t wl_height = 10;
     bool exact_gi = true;
     bool apriori = true;
@@ -242,8 +242,8 @@ int main() {
             apriori,
             ged_method);
 
-    size_t folds = 10;
-    size_t num_repetitions = 10;
+    size_t folds = 5;
+    size_t num_repetitions = 20;
     std::cout << "folds = " << folds << std::endl;
     std::cout << "num_repetitions = " << num_repetitions << std::endl;
     std::cout << std::endl;
@@ -251,7 +251,7 @@ int main() {
     log << "num_repetitions = " << num_repetitions << std::endl;
     log << std::endl;
 
-    for (int t_1 = 40; t_1 >= 0; t_1 -= 10) {
+    for (int t_1 = 100; t_1 >= 0; t_1 -= 10) {
         for (int t_0 = t_1; t_0 >= 0; t_0 -= 10) {
             t[0] = std::lround((double) t_0 / 100 * num_samples);
             t[1] = std::lround((double) t_1 / 100 * num_samples);
