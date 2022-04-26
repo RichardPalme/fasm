@@ -6,6 +6,8 @@
 #include "read_TUDataset_test.h"
 #include "pattern_growth_test.h"
 #include "call_FSG_test.h"
+#include "read_FSG_file_test.h"
+
 
 int main() {
     // test the graph datastructure
@@ -52,6 +54,8 @@ int main() {
     pattern_growth_test(G_1, G_2);
 
     call_FSG_test(G_1, G_2);
+
+    read_FSG_file_test();
 
     return 0;
 }

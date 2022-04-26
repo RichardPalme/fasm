@@ -51,6 +51,7 @@ add_executable(
     src/gi_weisfeiler_leman.cpp
     src/graph.cpp
     src/pattern_growth.cpp
+    src/read_FSG_file.cpp
     src/read_TUDataset.cpp
     src/sged_gedlib.cpp
     src/utils.cpp

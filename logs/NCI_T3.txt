@@ -1,0 +1,229 @@
+
+--------------------
+dataset_name = NCI1
+max_size = 7 
+max_num_patterns = 200 
+wl_height = 10
+exact_gi = 1
+apriori = 1
+ged_method = 0
+folds = 10
+num_repetitions = 10
+
+t_0 = 100, t_1 = 100, t_2 = 100, t_3 = 100
+num_features = 0
+t_0 = 90, t_1 = 90, t_2 = 90, t_3 = 100
+num_features = 4
+t_0 = 80, t_1 = 80, t_2 = 80, t_3 = 100
+num_features = 6
+t_0 = 70, t_1 = 70, t_2 = 70, t_3 = 100
+num_features = 10
+t_0 = 60, t_1 = 60, t_2 = 60, t_3 = 100
+num_features = 10
+t_0 = 50, t_1 = 50, t_2 = 50, t_3 = 100
+num_features = 11
+t_0 = 40, t_1 = 40, t_2 = 40, t_3 = 100
+num_features = 12
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 100
+num_features = 13
+t_0 = 20, t_1 = 20, t_2 = 20, t_3 = 100
+num_features = 17
+t_0 = 10, t_1 = 10, t_2 = 10, t_3 = 100
+num_features = 26
+t_0 = 0, t_1 = 0, t_2 = 0, t_3 = 100
+t_0 = 90, t_1 = 90, t_2 = 90, t_3 = 90
+num_features = 7
+t_0 = 80, t_1 = 80, t_2 = 80, t_3 = 90
+num_features = 18
+t_0 = 70, t_1 = 70, t_2 = 70, t_3 = 90
+num_features = 33
+Using SGED features
+mean = 0.597007
+stdev = 0.021581
+
+Using binary features
+mean = 0.602238
+stdev = 0.0226041
+
+t_0 = 60, t_1 = 60, t_2 = 60, t_3 = 90
+num_features = 58
+Using SGED features
+mean = 0.630925
+stdev = 0.0259274
+
+Using binary features
+mean = 0.648273
+stdev = 0.0267979
+
+t_0 = 50, t_1 = 50, t_2 = 50, t_3 = 90
+num_features = 91
+Using SGED features
+mean = 0.646156
+stdev = 0.0276715
+
+Using binary features
+mean = 0.649927
+stdev = 0.0260085
+
+t_0 = 40, t_1 = 40, t_2 = 40, t_3 = 90
+num_features = 142
+Using SGED features
+mean = 0.675401
+stdev = 0.0261443
+
+Using binary features
+mean = 0.686691
+stdev = 0.0262973
+
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 90
+t_0 = 80, t_1 = 80, t_2 = 80, t_3 = 80
+num_features = 18
+t_0 = 70, t_1 = 70, t_2 = 70, t_3 = 80
+num_features = 33
+Using SGED features
+mean = 0.597007
+stdev = 0.021581
+
+Using binary features
+mean = 0.602238
+stdev = 0.0226041
+
+t_0 = 60, t_1 = 60, t_2 = 60, t_3 = 80
+num_features = 58
+Using SGED features
+mean = 0.630925
+stdev = 0.0259274
+
+Using binary features
+mean = 0.648273
+stdev = 0.0267979
+
+t_0 = 50, t_1 = 50, t_2 = 50, t_3 = 80
+num_features = 91
+Using SGED features
+mean = 0.646156
+stdev = 0.0276715
+
+Using binary features
+mean = 0.649927
+stdev = 0.0260085
+
+t_0 = 40, t_1 = 40, t_2 = 40, t_3 = 80
+num_features = 142
+Using SGED features
+mean = 0.675401
+stdev = 0.0261443
+
+Using binary features
+mean = 0.686691
+stdev = 0.0262973
+
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 80
+t_0 = 70, t_1 = 70, t_2 = 70, t_3 = 70
+num_features = 33
+Using SGED features
+mean = 0.597007
+stdev = 0.021581
+
+Using binary features
+mean = 0.602238
+stdev = 0.0226041
+
+t_0 = 60, t_1 = 60, t_2 = 60, t_3 = 70
+num_features = 58
+Using SGED features
+mean = 0.630925
+stdev = 0.0259274
+
+Using binary features
+mean = 0.648273
+stdev = 0.0267979
+
+t_0 = 50, t_1 = 50, t_2 = 50, t_3 = 70
+num_features = 91
+Using SGED features
+mean = 0.646156
+stdev = 0.0276715
+
+Using binary features
+mean = 0.649927
+stdev = 0.0260085
+
+t_0 = 40, t_1 = 40, t_2 = 40, t_3 = 70
+num_features = 142
+Using SGED features
+mean = 0.675401
+stdev = 0.0261443
+
+Using binary features
+mean = 0.686691
+stdev = 0.0262973
+
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 70
+t_0 = 60, t_1 = 60, t_2 = 60, t_3 = 60
+num_features = 58
+Using SGED features
+mean = 0.630925
+stdev = 0.0259274
+
+Using binary features
+mean = 0.648273
+stdev = 0.0267979
+
+t_0 = 50, t_1 = 50, t_2 = 50, t_3 = 60
+num_features = 91
+Using SGED features
+mean = 0.646156
+stdev = 0.0276715
+
+Using binary features
+mean = 0.649927
+stdev = 0.0260085
+
+t_0 = 40, t_1 = 40, t_2 = 40, t_3 = 60
+num_features = 142
+Using SGED features
+mean = 0.675401
+stdev = 0.0261443
+
+Using binary features
+mean = 0.686691
+stdev = 0.0262973
+
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 60
+t_0 = 50, t_1 = 50, t_2 = 50, t_3 = 50
+num_features = 91
+Using SGED features
+mean = 0.646156
+stdev = 0.0276715
+
+Using binary features
+mean = 0.649927
+stdev = 0.0260085
+
+t_0 = 40, t_1 = 40, t_2 = 40, t_3 = 50
+num_features = 142
+Using SGED features
+mean = 0.675401
+stdev = 0.0261443
+
+Using binary features
+mean = 0.686691
+stdev = 0.0262973
+
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 50
+t_0 = 40, t_1 = 40, t_2 = 40, t_3 = 40
+num_features = 142
+Using SGED features
+mean = 0.675401
+stdev = 0.0261443
+
+Using binary features
+mean = 0.686691
+stdev = 0.0262973
+
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 40
+t_0 = 30, t_1 = 30, t_2 = 30, t_3 = 30
+t_0 = 20, t_1 = 20, t_2 = 20, t_3 = 20
+t_0 = 10, t_1 = 10, t_2 = 10, t_3 = 10
+t_0 = 0, t_1 = 0, t_2 = 0, t_3 = 0
