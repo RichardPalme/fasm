@@ -64,9 +64,31 @@ add_executable(
 )
 
 add_executable(
+    create_sged_matrix
+    executables/create_sged_matrix.cpp
+    src/call_FSG.cpp
+    src/cross_validation.cpp
+    src/gi_nauty.cpp
+    src/gi_weisfeiler_leman.cpp
+    src/graph.cpp
+    src/pattern_growth.cpp
+    src/read_FSG_file.cpp
+    src/read_TUDataset.cpp
+    src/sged_gedlib.cpp
+    src/utils.cpp
+    external/nauty27r3/nausparse.c
+    external/nauty27r3/nauty.c
+    external/nauty27r3/nautil.c
+    external/nauty27r3/naugraph.c
+    external/nauty27r3/schreier.c
+    external/nauty27r3/naurng.c
+)
+
+add_executable(
     exact_fasm
     executables/exact_fasm.cpp
     src/call_FSG.cpp
+    src/cross_validation.cpp
     src/gi_nauty.cpp
     src/gi_weisfeiler_leman.cpp
     src/graph.cpp

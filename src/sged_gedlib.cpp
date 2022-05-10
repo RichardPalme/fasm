@@ -4,6 +4,7 @@
 #include "sged_gedlib.h"
 //#include <cstdio>
 #include <unistd.h> // for dup and close
+#include <iostream>
 
 constexpr double eps() { return 1e-8; }
 

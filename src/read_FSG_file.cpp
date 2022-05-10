@@ -27,7 +27,7 @@ void read_FSG_file(
             iss >> u >> alpha;
             dataset[graph_id].add_node(alpha, u);
         }
-        if (c == 'e') {
+        if (c == 'u') {
             NodeId u;
             NodeId v;
             int beta;
