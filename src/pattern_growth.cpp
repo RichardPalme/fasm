@@ -311,7 +311,7 @@ bool PatternGrowth::is_interesting(
 
     // update the sged values w.r.t. lb
     for (size_t i = 0; i < S.size(); ++i) {
-        S[i].sged = std::max(S[i].sged, S[i].lb);
+        //S[i].sged = std::max(S[i].sged, S[i].lb);
     }
 
     // upper bounds for t (u is not an upper bound iff H is not interesting)
@@ -338,7 +338,9 @@ bool PatternGrowth::is_interesting(
     for (size_t i = 0; i < S.size(); ++i) {
         GraphId tid = S[i].tid;
         size_t sged = S[i].sged;
-        S[i].sged = sged_gedlib(H, database[tid], ged_method);
+        S[i].sged = sged_gedlib(H, database[tid], ged_method, cost_matrix);
+
+
         for (size_t j = sged; j < S[i].sged && j <= N; ++j) {
             u[j] -= 1;
             if (u[j] < t[j]) {

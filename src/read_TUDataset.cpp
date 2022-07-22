@@ -1,6 +1,7 @@
 #include "read_TUDataset.h"
 #include "utils.h"
 #include <fstream>
+#include <iostream>
 
 void read_TUDataset(
         std::unordered_map<GraphId, Graph> &dataset,
@@ -65,7 +66,33 @@ void read_TUDataset(
         if (dataset_name == "NCI1" and class_label == 0) {
             class_label = -1;
         }
+
         dataset[graph_id].m_class_label = class_label;
         graph_id += 1;
+    }
+}
+
+void read_cost_matrix(
+        std::vector<std::vector<double>> &cost_matrix,
+        std::string dataset_name) {
+
+    auto data_dir = root_dir() / "data" / dataset_name;
+
+    std::ifstream cost_file(data_dir / "edit_costs.txt");
+
+    if (cost_file.is_open()) {
+        size_t i = 0;
+        std::string line;
+        while(std::getline(cost_file,line)) {
+            cost_matrix.push_back(std::vector<double>());
+            std::stringstream ss(line);
+            std::string cost;
+
+            while(std::getline(ss, cost, ',')) {
+                cost_matrix[i].push_back(std::stod(cost));
+            }
+
+            i += 1;
+        }
     }
 }

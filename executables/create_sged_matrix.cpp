@@ -12,9 +12,9 @@
 typedef dlib::matrix<double, 0, 1> sample_type;
 
 int main() {
-    std::string dataset_name = "MUTAG";
-    size_t t = 80; // between 0 and 100
-    size_t max_size = 7;
+    std::string dataset_name = "NCI1";
+    size_t t = 60; // between 0 and 100
+    size_t max_size = 9;
 
     std::ofstream log;
     // append instead of overwrite
@@ -50,7 +50,7 @@ int main() {
     std::vector<Graph> freq_graphs;
     read_FSG_file(freq_graphs, FSG_filename_fp);
 
-    // Add frequent patterns of size 1 to freq_graphs
+    // Add frequent patterns of size 0 to freq_graphs
     size_t num_samples = dataset.size();
 
     std::unordered_map<int, size_t> label_freq;
@@ -99,7 +99,7 @@ int main() {
 
         size_t i = 0;
         for (auto &H : freq_graphs) {
-            sged_matrix(i, j) = sged_gedlib(H, G, F2);
+            sged_matrix(i, j) = sged_gedlib(H, G, F2, std::vector<std::vector<double>>());
             i += 1;
         }
         j += 1;
@@ -140,7 +140,7 @@ int main() {
 
     // For different choices of t = t_0, t_1, ...
     for (int i = 1; i <= max_sged_val; i *= 2) {
-        for (int t_i = 100; t_i >= 0; t_i -= 10) {
+        for (int t_i = 100; t_i >= 0; t_i -= 20) {
             for (int t_0 = t_i; t_0 >= t; t_0 -= 10) {
                 int real_t_i =
                     std::lround((double)t_i / 100 * num_samples);
@@ -153,6 +153,10 @@ int main() {
                     if ((sged_counts(l, 0) >= real_t_0) && (sged_counts(l, i) >= real_t_i)) {
                         freq_indices.push_back(l);
                     }
+                }
+
+                if (freq_indices.size() < 20) {
+                    continue;
                 }
 
                 // Compute the feature vectors

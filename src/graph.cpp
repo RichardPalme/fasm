@@ -1,7 +1,7 @@
 #include "graph.h"
 #include <algorithm> // for std::minmax(u, v)
 #include <cstdint> // for cast to int32_t
-#include <iostream> // for debugging
+#include <iostream>
 
 
 // The key is used as an index for the unordered_map edge_labels
@@ -76,6 +76,25 @@ size_t Graph::num_nodes() {
 
 size_t Graph::num_edges() {
     return edge_labels.size();
+}
+
+void Graph::print() {
+    std::cout << "num_nodes = " << num_nodes() << std::endl;
+    std::cout << "NodeId, label" << std::endl;
+    for (const auto &kv : node_labels) {
+        NodeId u = kv.first;
+        int alpha = kv.second;
+        std::cout << u << ", " << alpha << std::endl;
+    }
+    std::cout << "num_edges = " << num_edges() << std::endl;
+    std::cout << "NodeId, NodeId, label" << std::endl;
+    for (const auto &kv : edge_labels) {
+        size_t key = kv.first;
+        auto e = key2edge(key);
+        int beta = kv.second;
+        std::cout << e.first << ", " << e.second << ", " << beta << std::endl;
+    }
+    std::cout << std::endl;
 }
 
 void Graph::_visit(NodeId u, std::unordered_set<NodeId> &visited) {

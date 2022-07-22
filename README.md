@@ -30,3 +30,7 @@ mtypesgedlib library
 `mkdir build && cd build && cmake .. && cmake --build . -j32`  
 
 After executing this command, the executables can be found in the build directory
+
+### Dealing with errors
+If `cmake --build .` gives `fatal error: gurobi_c++.h: No such file or directory`,
+then: `source ~/.bashrc && cmake .. && cmake --build .` may fix it.

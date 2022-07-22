@@ -45,6 +45,8 @@ public:
     size_t num_nodes(void);
     size_t num_edges(void);
 
+    void print(void);
+
     // returns true if the graph is (weakly) connected.
     bool is_connected(void);
 

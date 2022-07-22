@@ -48,7 +48,7 @@ bool feature_mining(PatternGrowth &patgrow, fs::path &stored_vectors) {
         //sample.reserve(num_features);
         for (size_t i = 0; i < num_features; ++i) {
             Graph &H = patgrow.output[i];
-            sample(i) = sged_gedlib(H, G, patgrow.ged_method);
+            sample(i) = sged_gedlib(H, G, patgrow.ged_method, std::vector<std::vector<double>>());
         }
         samples.push_back(sample);
         labels.push_back(G.m_class_label);

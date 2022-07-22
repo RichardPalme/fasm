@@ -26,6 +26,7 @@ public:
     bool exact_gi;
     bool apriori;
     GEDMethod ged_method;
+    std::vector<std::vector<double>> cost_matrix;
 
     PatternGrowth(
             std::unordered_map<GraphId, Graph> &database,
@@ -35,11 +36,12 @@ public:
             size_t wl_height=10,
             bool exact_gi=true,
             bool apriori=true,
-            GEDMethod ged_method=F2) :
+            GEDMethod ged_method=F2,
+            std::vector<std::vector<double>> cost_matrix=std::vector<std::vector<double>>()) :
         database{database}, t{t}, max_size{max_size},
         max_num_patterns{max_num_patterns},
         wl_height{wl_height}, exact_gi{exact_gi}, apriori{apriori},
-        ged_method{ged_method} {}
+        ged_method{ged_method}, cost_matrix{cost_matrix} {}
 
     void extract_label_alphabet(void);
     bool pattern_growth(void); // return value of true means the program aborted
