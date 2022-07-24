@@ -2,13 +2,16 @@
 #include "read_TUDataset.h"
 #include "utils.h"
 #include <cmath> // for lround
+#include <cstring>
+#include <cstdlib>
 #include <dlib/svm.h>
 #include <iostream>
 #include <fstream>
 
 //enum NodeNames {In = 0, Na = 4, Cl = 6, Br = 8, F = 9, K = 10, Cu = 11, Zn = 12, I = 13, Ba = 14, Sn = 15, Pb = 16, Ca = 17, L1 = 18, L2 = 19, L3 = 20, L4 = 21, L5 = 22, L6 = 23, L7 = 24, L8 = 25, L9 = 26};
 
-int main() {
+int main(int argc, char **argv) {
+
     std::string dataset_name = "MUTAG";
     size_t max_size = 20;
     size_t max_num_patterns = 10000;
@@ -16,8 +19,25 @@ int main() {
     bool exact_gi = true;
     bool apriori = true;
     GEDMethod ged_method = F2;
+    size_t t_0 = 42;
 
     size_t num_new_labels = 5;
+
+    for (size_t i = 1; i < argc; i++) {
+        if (std::strcmp(argv[i], "-dataset_name")==0) {
+            dataset_name = argv[i + 1];
+        } else if (std::strcmp(argv[i], "-max_size")==0) {
+            max_size = std::atoi(argv[i + 1]);
+        } else if (std::strcmp(argv[i], "-exact_gi")==0) {
+            exact_gi = std::atoi(argv[i + 1]);
+        } else if (std::strcmp(argv[i], "-ged_method")==0) {
+            ged_method = (GEDMethod) std::atoi(argv[i + 1]);
+        } else if (std::strcmp(argv[i], "-num_new_labels")==0) {
+            num_new_labels = std::atoi(argv[i + 1]);
+        } else if (std::strcmp(argv[i], "-t")==0) {
+            t_0 = std::atoi(argv[i + 1]);
+        }
+    }
 
     std::unordered_map<GraphId, Graph> full_dataset;
     read_TUDataset(full_dataset, dataset_name);
@@ -25,7 +45,7 @@ int main() {
     std::vector<std::vector<double>> cost_matrix;
     read_cost_matrix(cost_matrix, dataset_name);
 
-#if 1
+#if 0
     std::unordered_map<GraphId, Graph> dataset;
     for (const auto &kv : full_dataset) {
         GraphId g = kv.first;
@@ -42,14 +62,12 @@ int main() {
         }
     }
 #endif
-#if 0
+#if 1
     auto dataset = full_dataset;
 #endif
 
     size_t num_samples = dataset.size();
     std::cout << "num_samples = " << num_samples << std::endl;
-
-    size_t t_0 = 42;
 
     size_t tau = 0;
     std::vector<size_t> t(tau+1);
@@ -78,7 +96,6 @@ int main() {
     }
 
     patgrow.pattern_growth();
-
 
     std::cout << "Selection of the frequent generalized patterns:" << std::endl;
     for (Graph &G : patgrow.output) {

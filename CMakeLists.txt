@@ -85,8 +85,8 @@ add_executable(
 )
 
 add_executable(
-    ecml
-    executables/ecml.cpp
+    generalized_FSM
+    executables/generalized_FSM.cpp
     src/call_FSG.cpp
     src/cross_validation.cpp
     src/gi_nauty.cpp
