@@ -44,14 +44,17 @@ then: `source ~/.bashrc && cmake .. && cmake --build .` may fix it.
 ## Using this repo
 This repository can be used to mine the frequent generalized subgraphs in a graph
 database of undirected labeled graphs by making use of graph edit distances.
-For more information about this method, see  
-R. Palme, P. Welke: "Frequent Generalized Graph Mining via Graph Edit
-Distances", under review at SeDaMi’22 Workshop at ECML/PKDD.  
-R. Palme: "Frequent Approximate Subgraph Mining with Polynomial Delay",
-master's thesis.
-
 The graphs in the database can have vertex and/or edge
 labels. The mining process uses a taxonomy on the vertex labels.
+For more information about this method, see
+
+R. Palme, P. Welke: "Frequent Generalized Graph Mining via Graph Edit
+Distances", under review at SeDaMi’22 Workshop at ECML/PKDD.  
+
+To read about the inner workings of the algorithm, see  
+
+R. Palme: "Frequent Approximate Subgraph Mining with Polynomial Delay",
+master's thesis.
 
 The executable `generalized_FSM` is used to mine the freq. generalized subgraphs. Options for `generalized_FSM`:
 
