@@ -4,7 +4,7 @@ The code in this repository can be used to mine the frequent generalized subgrap
 database of undirected labeled graphs.
 
 ## Installation
-Installation instructions for Linux systems. This repo has only been tested on Ubuntu Linux systems. To compile all requirements and the source, Python 3, Cmake, and Make are required.
+Installation instructions for Linux systems. This repo has only been tested on Ubuntu Linux. To compile all requirements and the source, Python 3, Cmake, Make, and a C++ compiler with support for C++14 are required.
 
 ### Install Gurobi
 First, install Gurobi. To help with the installation, we list the necessary steps here:
@@ -43,19 +43,28 @@ then: `source ~/.bashrc && cmake .. && cmake --build .` may fix it.
 
 ## Using this repo
 This repository can be used to mine the frequent generalized subgraphs in a graph
-database of undirected labeled graphs.
+database of undirected labeled graphs by making use of graph edit distances.
+For more information about this method, see  
+R. Palme, P. Welke: "Frequent Generalized Graph Mining via Graph Edit
+Distances", under review at SeDaMi’22 Workshop at ECML/PKDD.
+
 The graphs in the database can have vertex and/or edge
 labels. The mining process uses a taxonomy on the vertex labels.
 
 The executable `generalized_FSM` is used to mine the freq. generalized subgraphs. Options for `generalized_FSM`:
 
-`-dataset_name`: Name of a folder in the /data directory. Must contain the graph
-database in TUDataset format. Must also contain a file edit_costs.txt
-containing a comma-separated Boolean matrix C, with C[a,b] = 0 if and only if (a=b or b is
-more general than a in the vertex label taxonomy). The rows and columns of C
-must correspond to the vertex labels.
+`-dataset_name`: The name of a dataset of undirected graphs.
+The user must create a directory `/data/dataset_name` in the
+working directory, which must contain the graph database in TUDataset format. 
 
-`-max_size`: maximum number of edges of a graph in the output.
+The TUDataset format ensures that the vertex are labeled with 0,1,2,...,k.
+The user must make sure that the directory `/data/dataset_name` contains a
+file of name `edit_costs.txt`, which contains a comma-separated Boolean matrix
+C, with C[a,b] = 0 if and only if (a=b or b is
+more general than a in the vertex label taxonomy). Here, a and b correspond to
+vertex labels in {0,1,...,k}. In particular, C must have at least k+1 rows and columns.
+
+`-max_size`: The maximum number of edges of a graph in the output.
 
 `-exact_gi`: 1 if graph isomorphism shall be computed with an exact algorithm (using
 Nauty), 0 if graph isomorphism shall be computed with a heuristic algorithm
@@ -65,8 +74,11 @@ Nauty), 0 if graph isomorphism shall be computed with a heuristic algorithm
 (using Gurobi), 1-5 if graph edit distance shall be computed with a heuristic
 algorithm (see also: GEDMethod defined in src/sged_gedlib.h)
 
-`-num_new_labels`: Number of vertex labels that do appear in the taxonomy, but not
-in the graph database.
+`-num_new_labels`: The number of vertex labels that do appear in the taxonomy, but not
+in the graph database. If the vertex labels in the graph database are
+0,1,2,...,k, then the new vertex labels will be k+1,k+2,... (the label names
+are important
+for defining the cost matrix in `/data/dataset_name/edit_costs.txt`)
 
 `-t`: relative frequency threshold for the graph mining. Must be an integer
 between 1 and 100.
