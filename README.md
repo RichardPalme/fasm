@@ -1,10 +1,10 @@
 # Frequent Generalized Subgraph Mining
 ## About this repository
-This repository can be used to mine the frequent generalized subgraphs in a graph
+The code in this repository can be used to mine the frequent generalized subgraphs in a graph
 database of undirected labeled graphs.
 
 ## Installation
-Installation instructions for Linux systems (this repo has only been tested on Linux systems)
+Installation instructions for Linux systems. This repo has only been tested on Ubuntu Linux systems. To compile all requirements and the source, Python 3, Cmake, and Make are required.
 
 ### Install Gurobi
 First, install Gurobi. To help with the installation, we list the necessary steps here:
@@ -19,10 +19,10 @@ First, install Gurobi. To help with the installation, we list the necessary step
 4. Register at gurobi.com and get your free academic license
 5. Log in and visit https://www.gurobi.com/downloads/licenses/
 6. Copy-paste the grbgetkey command into a terminal and hit enter.  
-grbgetkey will ask where to store the license key. Make sure to store the license key in $HOME/gurobi950
-7. In a terminal, navigate to $HOME/gurobi951/linux64/src/build and write the following command:  
+grbgetkey will ask where to store the license key. Make sure to store the license key in `$HOME/gurobi951/gurobi.lic`
+7. In a terminal, navigate to `$HOME/gurobi951/linux64/src/build` and write the following command:  
 `make`
-8. Copy libgurobi_c++.a into the following folder: $HOME/gurobi951/linux64/lib
+8. Copy `libgurobi_c++.a` into the following folder: `$HOME/gurobi951/linux64/lib`
 
 ### Install Gedlib
 1. `cd external/gedlib`
