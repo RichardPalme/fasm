@@ -46,7 +46,9 @@ This repository can be used to mine the frequent generalized subgraphs in a grap
 database of undirected labeled graphs by making use of graph edit distances.
 For more information about this method, see  
 R. Palme, P. Welke: "Frequent Generalized Graph Mining via Graph Edit
-Distances", under review at SeDaMi’22 Workshop at ECML/PKDD.
+Distances", under review at SeDaMi’22 Workshop at ECML/PKDD.  
+R. Palme: "Frequent Approximate Subgraph Mining with Polynomial Delay",
+master's thesis.
 
 The graphs in the database can have vertex and/or edge
 labels. The mining process uses a taxonomy on the vertex labels.
